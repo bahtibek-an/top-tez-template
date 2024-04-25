@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth">
+            <div class="auth__container">
+                <div class="auth__header">
+                    <div class="auth__header-icon">
+                        <img src="./images/logo.svg" alt="logo"/>
+                    </div>
+                    <!-- <div class="auth__header-translate">Русский</div> -->
+                    <div class="auth__header-translate">
+                        <form action="auth__header-form" method="">
+                            <select class="auth__header-form-translate" name="">
+                                <option value="ru" selected>Русский</option>
+                                <option value="uz">Узбекский</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="auth__form">
+                    <h2>Войти в систему</h2>
+                    <form action="" method="">
+                        <label for="email">Эл. почта</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Введите эл. почту"/>
+                        <label class="mt-24" for="password">Пароль</label>
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Введите пароль"/>
+                        <div class="auth__bottom">
+                            <a class="auth__bottom-link" href="#">Забыли пароль</a>
+                            <button class="auth__bottom-btn" type="submit">Войти</button>
+                        </div>
+                    </form>
+                </div>
+               <div class="auth__button_or my-24 text-center text-grey fs-16">или</div>
+                <div class="auth__socials">
+                    <a class="socials socials-google">
+                        <img src="./images/Google.svg" alt="google"/>
+                        <span>Войти через Google</span>
+                    </a>
+                    <a class="socials socials-facebook">
+                        <img src="./images/Facebook.svg" alt="facebook"/>
+                        <span>Войти через Facebook</span>
+                    </a>
+                </div>
+                <div class="auth__helper"><span>У вас нет аккаунта? </span><a href="./registration.html">Регистрация</a></div>
+            </div>
+        </div>
+        <div class="auth-background">
+            <img src="./images/auth-background.png" alt=""/>
+        </div>
+    </div>
+</body>
+</html>

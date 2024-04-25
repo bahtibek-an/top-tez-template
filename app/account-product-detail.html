@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+     <!-- header top  -->
+     <header class="header-top">
+        <div class="container">
+          <div class="header-top__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="header-top__list-item">
+                  <span>Выбранный город: </span>
+                  <form class="select-form" action="form" method="">
+                    <select>
+                      <option value="tashkent" selected>Ташкент</option>
+                      <option value="samarkand">Самарканд</option>
+                      <option value="nukus">Нукус</option>
+                    </select>
+                  </form>
+                </li>
+                <li class="header-top__list-item header-top__list-item-contact">
+                  <a class="header-top__link" href="tel:+998711000001">
+                    <img src="./images/contact-icon.svg" alt="" />
+                    <span>Горячая линия: +998 71 100 00 01</span>
+                  </a>
+                </li>
+                <li class="header-top__list-item header-top__list-item-contact">
+                  <a class="header-top__link" href="mailto:support@toptez.uz">
+                    <img src="./images/email-icon.svg" alt="" />
+                    <span>Эл. почта: support@toptez.uz</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="header-top__list-item header-top__list-item-contact">
+                  <a class="header-top__link" href="#">
+                    <img src="./images/help-icon.svg" alt="" />
+                    <span>Помощь</span>
+                  </a>
+                </li>
+                <li class="header-top__list-item">
+                  <span>Изменить язык: </span>
+                  <form class="select-form" action="" method="">
+                    <select>
+                      <option value="ru" selected>Русский</option>
+                      <option value="uz">Узбекский</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header top end  -->
+  
+      <!-- header mobile begin  -->
+  
+      <header class="mobile-header">
+        <div class="container">
+          <div class="mobile-header__content">
+            <div class="mobile-header__inner">
+              <div class="mobile-header__hamburger">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <a class="mobile-header__logo" href="#"><img src="./images/logo.svg" alt="logo" /></a>
+              <ul class="mobile-header__list">
+                <li class="mobile-header__item">
+                  <a class="mobile-header__item-link" href="#">
+                    <img src="./images/account.svg" alt="account" />
+                    <span>Аккаунт</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <form class="mobile-header__form" action="" method="">
+              <input
+                class="mobile-header__form-input"
+                type="text"
+                placeholder="Поиск оборудования, бренд, продавца..."
+              />
+              <button class="mobile-header__form-btn">
+                <img src="./images/search-icon.svg" alt="search-icon" />
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="mobile__right-menu">
+          <div class="mobile__right-menu__inner">
+  
+            <div class="mobile__right-menu-close-btn"></div>
+  
+            <a class="mobile__right-menu-contact" href="tel:+998711000001">
+              <img src="./images/contact-icon.svg" alt="" />
+              <span>Горячая линия: +998 71 100 00 01</span>
+            </a>
+  
+            <a class="mobile__right-menu-contact" href="mailto:support@toptez.uz">
+              <img src="./images/email-icon.svg" alt="" />
+              <span>Эл. почта: support@toptez.uz</span>
+            </a>
+  
+            <div class="mobile__right-menu-selected"> 
+              <span>Выбранный город: </span>
+              <form class="select-form" action="form" method="">
+                <select>
+                  <option value="tashkent" selected>Ташкент</option>
+                  <option value="samarkand">Самарканд</option>
+                  <option value="nukus">Нукус</option>
+                </select>
+              </form>
+            </div>
+  
+            <div class="mobile__right-menu-selected">
+              <span>Изменить язык: </span>
+                <form class="select-form" action="" method="">
+                  <select>
+                    <option value="ru" selected>Русский</option>
+                    <option value="uz">Узбекский</option>
+                  </select>
+                </form>
+            </div>
+  
+            
+            <ul class="mobile__right-menu-list">
+              <li class="mobile__right-menu-item">
+                <a href="#">
+                  Сравнение
+                  <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+                </a>
+              </li>
+              <li class="mobile__right-menu-item">
+                <a href="#">
+                  Избранные
+                  <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+                </a>
+              </li>
+              <li class="mobile__right-menu-item">
+                <a href="">
+                  Помощь
+                  <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  
+      <!-- header mobile end  -->
+  
+      
+  
+      <!-- main header  -->
+  
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="logo" href="#">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+            <form class="form" action="" method="">
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Поиск оборудования, бренд, продавца..."
+              />
+              <button class="form__button">
+                <img src="./images/search-icon.svg" alt="search-icon" />
+              </button>
+            </form>
+            <nav class="menu menu__header">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#">
+                    <img src="./images/compared.svg" alt="compared" />
+                    <span>Сравнение<i class="link-badge">4</i></span>
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#">
+                    <img src="./images/compared.svg" alt="favorites" />
+                    <span>Избранные</span>
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#">
+                    <img src="./images/account.svg" alt="account" />
+                    <span>Аккаунт</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+  
+      <!-- main header end  -->
+
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="container">
+            
+            <!-- breadcrumb begin  -->
+
+          <div class="product-detail__breadcrumb">
+              <ul class="product-detail__breadcrumb-list">
+                  <li class="product-detail__breadcrumb-item">
+                      <a class="product-detail__breadcrumb-item-link" href="#">Главная</a>
+                      <span class="product-detail__breadcrumb-item-icon">»</span>
+                  </li>
+                  <li class="product-detail__breadcrumb-item">
+                      <a class="product-detail__breadcrumb-item-link" href="#">Каталог</a>
+                      <span class="product-detail__breadcrumb-item-icon">»</span>
+                  </li>
+                  <li class="product-detail__breadcrumb-item">
+                      <a class="product-detail__breadcrumb-item-link" href="#">Комфорт, хорошее самочувствие</a>
+                      <span class="product-detail__breadcrumb-item-icon">»</span>
+                  </li>
+                  <li class="product-detail__breadcrumb-item">
+                      <a class="product-detail__breadcrumb-item-link is_active" href="#">Электронная система упаковки FR 305</a>
+                  </li>
+              </ul>
+              <a class="product-detail__breadcrumb-sharelink" href="#">
+                  <img src="./images/share.svg" alt="share-icon"/>
+                  <span class="clipboard-sharelink-text">Поделиться ссылкой</span>
+                  <span class="clipboard-sharelink" style="display: none;">http://localhost:3000/product-detail.html</span>
+              </a>
+          </div>
+
+            <!-- breadcrumb end  -->
+
+
+          <div class="product-detail">
+
+              <!-- left product image gallery slider begin  -->
+              <div class="product-detail__images">
+                  <div class="product-detail__images-gallery-slider">
+                      <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                          <div class="product-detail__images-gallery-slider-item">
+                              <img src="./images/product-detail-gallery/image 12.png" alt=""/>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="product-detail__images-gallery-slider-item">
+                              <img src="./images/product-detail-gallery/image 13.png" alt=""/>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                          <div class="product-detail__images-gallery-slider-item">
+                              <img src="./images/product-detail-gallery/image 14.png" alt=""/>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="product-detail__images-gallery-slider-item">
+                              <img src="./images/product-detail-gallery/image 15.png" alt=""/>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </div>
+              </div>
+                
+                <!-- left product image gallery slider end  -->
+
+                <!-- main product image begin  -->
+
+                <div class="product-detail__main-image">
+                    <div class="product-detail__main-image-slider">
+                        <div class="swiper-wrapper">
+
+                          <div class="swiper-slide">
+
+                            <div class="product-detail__main-image-slider-item">
+                                <img class="product-detail__main-image-slider-item-img" src="./images/product-detail-gallery/image 1.png" alt=""/>
+                            </div>
+
+                          </div>
+
+                          <div class="swiper-slide">
+
+                            <div class="product-detail__main-image-slider-item">
+                                <img class="product-detail__main-image-slider-item-img" src="./images/product-detail-gallery/image 1.png" alt=""/>
+                            </div>
+
+                          </div>
+
+                          <div class="swiper-slide">
+
+                            <div class="product-detail__main-image-slider-item">
+                                <img class="product-detail__main-image-slider-item-img" src="./images/product-detail-gallery/image 1.png" alt=""/>
+                            </div>
+
+                          </div>
+
+
+                          <div class="swiper-slide">
+
+                            <div class="product-detail__main-image-slider-item">
+                                <img class="product-detail__main-image-slider-item-img" src="./images/product-detail-gallery/image 1.png" alt=""/>
+                            </div>
+
+                          </div>
+
+                    </div>
+                    <div class="product-detail__main-image-slider-item-stock">  <!-- add class "in_stock for green background" -->
+                        Нет в наличии
+                    </div>
+                    <a class="product-detail__main-image-slider-item-video" href="#">
+                        Посмотреть видео о товаре
+                        <img src="./images/video-play-icon.svg" alt="play-icon"/>
+                    </a>
+
+                    <div class="product-detail__main-image-slider-item-rating">
+                      <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#FFA800"/>
+                      </svg>
+                      5.0
+                    </div>
+                    
+                </div>
+
+                <!-- main product image end  -->
+            </div>
+
+            <!-- product detail description begin -->
+
+            <div class="product-detail__description">
+              <div class="product-detail__description-header"><h2>Электронная система упаковки FR 305</h2></div>
+              <span class="product-detail__description-last-update">Последнее обновление: Сегодня 14:54</span>
+              <div class="product-detail__description-brand">
+                <img src="./images/brands/ulma.png" alt="brand" />
+                <a href="#">Посмотреть все товары данного бренда</a>
+              </div>
+              <p class="product-detail__description-text">
+                Горизонтальная упаковочная машина, специально ориентированная на упаковку хлебобулочных и кондитерских изделий, шоколада и конфет в трехшовный пакет по принципу "флоупак". Новое семейство машин FR 305 –это результат постоянного стремления ULMA к 
+                инновациям и технологическому развитию. Новая FR 305 принадлежит к семейству роторных флоу-паков. 
+                Новая FR 305 вышла вместо предыдущих машин семейства роторных флоу-паков с нижним расположением рулона, добавив к их опыту, мощности и проверенной надежности машин предыдущего поколения последние технологические инновации. 
+                Новая FR 305 наделена всеми качествами, за которые ценится УЛЬМА: прочность, надёжность и простота в работе. В дополнение ко всем этим достоинствам, новая модель обладает эргономичным дизайном, упрощающим санитарную обработку и чистку машины. 
+                Благодаря современному промышленному компьютеру машина приобрела еще большую “гибкость” и универсальность, а переходить с продукта на продукт стало еще быстрее и проще. Все эти особенности зарекомендовали FR 305 как идеальную 
+                машину для упаковки разных по длине или сложно-транспортируемых продуктов.
+                <span class="product-detail__description-text-bg"></span>
+              </p>
+              <button class="product-detail__description-text-toggle">Посмотреть полное описание</button>
+              
+              <div class="product-detail__description-contact">
+                <a class="product-detail__description-phone" href="tel:+998901234567">
+                  <img src="./images/black-contact-icon.svg" alt="contact-icon"/>
+                  +998&nbsp;
+                  <span class="product-detail__description-phone-hidden">901234567</span>
+                </a>
+                <button class="product-detail__description-open-phone">Показать номер продавца</button>
+              </div>
+
+              <h2 class="product-detail__description-price">2 850 USD</h2>
+
+              <div class="product-detail__description-btn">
+                <a class="product-detail__description-compare" href="#">Удалить из сравнения</a>
+                <a class="product-detail__description-addfvrs" href="#"> <!-- <-- is_active -->
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.04895 2.42664C6.34833 1.50538 7.65167 1.50538 7.95104 2.42664L8.57175 4.33672C8.70563 4.74872 9.08956 5.02766 9.52276 5.02767L11.5312 5.02775C12.4998 5.02778 12.9026 6.26733 12.1189 6.83674L10.4942 8.01732C10.1437 8.27196 9.99705 8.72329 10.1309 9.13529L10.7515 11.0454C11.0508 11.9667 9.99634 12.7328 9.21264 12.1634L7.58775 10.983C7.23728 10.7284 6.76272 10.7284 6.41225 10.983L4.78736 12.1634C4.00366 12.7328 2.94924 11.9667 3.24854 11.0454L3.8691 9.13529C4.00295 8.72329 3.8563 8.27196 3.50585 8.01732L1.88106 6.83674C1.0974 6.26733 1.50015 5.02778 2.46884 5.02775L4.47724 5.02767C4.91044 5.02766 5.29437 4.74872 5.42825 4.33672L6.04895 2.42664Z" stroke="#14B8A6" stroke-width="1.5"/>
+                  </svg>
+                  Добавить в избранные
+                </a>
+              </div>
+            </div>
+
+            <!-- product detail description end -->
+          </div>
+
+          <div class="product-detail__features">
+            <div class="product-detail__features-header">
+              <button class="product-detail__features-header-chrs is_opened">Характеристики</button>
+              <button class="product-detail__features-header-feedback">Отзывы</button>
+            </div>
+
+            <nav class="product-detail__features-nav">
+
+              <ul class="product-detail__features-list">
+                <li class="product-detail__features-item">
+                  <p class="product-detail__features-item-key">Режим функционирования</p>
+                  <p class="product-detail__features-item-value">Электронная</p>
+                </li>
+                <li class="product-detail__features-item">
+                  <p class="product-detail__features-item-key">Тип</p>
+                  <p class="product-detail__features-item-value">С пленкой, горизонтальная, роторная</p>
+                </li>
+                <li class="product-detail__features-item">
+                  <p class="product-detail__features-item-key">Применение изделия</p>
+                  <p class="product-detail__features-item-value">Конвейера</p>
+                </li>
+                <li class="product-detail__features-item">
+                  <p class="product-detail__features-item-key">Тип емкости</p>
+                  <p class="product-detail__features-item-value">Для коробок</p>
+                </li>
+                <li class="product-detail__features-item">
+                  <p class="product-detail__features-item-key">Приспособления</p>
+                  <p class="product-detail__features-item-value">Запаиватель</p>
+                </li>
+              </ul>
+
+            </nav>
+
+            <div class="product-detail__features-review">
+              <form class="product-detail__features-review-form" action="" method="">
+
+                <label>Ваша оценка</label>
+                <div class="product-detail__features-review-rating">
+                  <input type="radio" name="rate" id="rate-5"/>
+                  <label for="rate-5">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                    </svg>
+                  </label>
+                  <input type="radio" name="rate" id="rate-4"/>
+                  <label for="rate-4">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                    </svg>
+                  </label>
+                  <input type="radio" name="rate" id="rate-3"/>
+                  <label for="rate-3">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                    </svg>
+                  </label>
+                  <input type="radio" name="rate" id="rate-2"/>
+                  <label for="rate-2">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                    </svg>
+                  </label>
+                  <input type="radio" name="rate" id="rate-1"/>
+                  <label for="rate-1">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                    </svg>
+                  </label>
+                </div>
+
+                <label>Ваша оценка</label>
+                <textarea class="product-detail__features-input" type="text" name="feed-text" placeholder="Не более 255 символов"></textarea>
+                <div class="product-detail__features-btn">
+                  <p class="product-detail__features-rules">
+                    Перед отправкой отзыва прочитайте 
+                    <a href="#">Правила нашего сервиса</a>
+                  </p>
+                  <button type="submit">Отправить</button>
+                </div>
+
+              </form>
+
+              <div class="product-detail__features-review-content">
+
+                <div class="product-detail__features-review-content-header">
+                  <div class="product-detail__features-review-content-all__feed">Все отзывы</div>
+
+                  <div class="product-detail__features-review-feed-item is_active">
+                    <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#FFA800"/>
+                    </svg>
+                    5
+                  </div>
+
+                  <div class="product-detail__features-review-feed-item is_active">
+                    <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#FFA800"/>
+                    </svg>
+                    4
+                  </div>
+
+                  <div class="product-detail__features-review-feed-item is_active">
+                    <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#FFA800"/>
+                    </svg>
+                    3
+                  </div>
+                  
+                  <div class="product-detail__features-review-feed-item is_active">
+                    <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#FFA800"/>
+                    </svg>
+                    2
+                  </div>
+
+                  <div class="product-detail__features-review-feed-item is_active">
+                    <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="rating-icon" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#FFA800"/>
+                    </svg>
+                    1
+                  </div>
+
+
+                  <span class="product-detail__features-review-content-count">4 отзыва</span>
+
+                </div>
+
+                <ul class="product-detail__features-review-list">
+
+                  <li class="product-detail__features-review-item">
+
+                    <div class="product-detail__features-review-item-avatar">
+                      <div class="product-detail__features-review-item-avatar-image">
+                        <span>AS</span>
+                      </div>
+                      <div class="product-detail__features-review-item-avatar-info">
+                        <h4>Akhmed Samani</h4>
+                        <div class="product-detail__rating">
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-detail__features-review-btn">
+                        <a href="#"><img src="./images/delete-icon-feedback.svg"/></a>
+                        <a href="#"><img src="./images/open-icon-feedback.svg"/></a>
+                      </div>
+                    </div>
+
+                    <p class="product-detail__features-review-item-text">
+                      <strong>Very Cooooooool!</strong>
+                      The new M2 chip makes the 13‑inch MacBook Pro more capable than ever. The same compact design supports up to 20 hours of battery life1 and an active cooling system to sustain enhanced performance. Featuring a brilliant Retina display, a FaceTime HD camera, and studio‑quality mics, it’s our most portable pro laptop.
+                    </p>
+
+                    <div class="product-detail__features-review-answer">
+                        <h4>Ответ поставщика</h4>
+                        <p>Thank you for your feedback 😇</p>
+                    </div>
+                  </li>
+
+                  <li class="product-detail__features-review-item">
+
+                    <div class="product-detail__features-review-item-avatar">
+                      <div class="product-detail__features-review-item-avatar-image">
+                        <span>AS</span>
+                      </div>
+                      <div class="product-detail__features-review-item-avatar-info">
+                        <h4>Akhmed Samani</h4>
+                        <div class="product-detail__rating">
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-detail__features-review-btn">
+                        <a href="#"><img src="./images/delete-icon-feedback.svg"/></a>
+                        <a href="#"><img src="./images/open-icon-feedback.svg"/></a>
+                      </div>
+                    </div>
+
+                    <p class="product-detail__features-review-item-text">
+                      <strong>Very Cooooooool!</strong>
+                      The new M2 chip makes the 13‑inch MacBook Pro more capable than ever. The same compact design supports up to 20 hours of battery life1 and an active cooling system to sustain enhanced performance. Featuring a brilliant Retina display, a FaceTime HD camera, and studio‑quality mics, it’s our most portable pro laptop.
+                    </p>
+                  </li>
+
+                  <li class="product-detail__features-review-item">
+
+                    <div class="product-detail__features-review-item-avatar">
+                      <div class="product-detail__features-review-item-avatar-image">
+                        <span>AS</span>
+                      </div>
+                      <div class="product-detail__features-review-item-avatar-info">
+                        <h4>Akhmed Samani</h4>
+                        <div class="product-detail__rating">
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-detail__features-review-btn">
+                        <a href="#"><img src="./images/delete-icon-feedback.svg"/></a>
+                        <a href="#"><img src="./images/open-icon-feedback.svg"/></a>
+                      </div>
+                    </div>
+
+                    <p class="product-detail__features-review-item-text">
+                      <strong>Very Cooooooool!</strong>
+                      The new M2 chip makes the 13‑inch MacBook Pro more capable than ever. The same compact design supports up to 20 hours of battery life1 and an active cooling system to sustain enhanced performance. Featuring a brilliant Retina display, a FaceTime HD camera, and studio‑quality mics, it’s our most portable pro laptop.
+                    </p>
+                  </li>
+
+                  <li class="product-detail__features-review-item">
+
+                    <div class="product-detail__features-review-item-avatar">
+                      <div class="product-detail__features-review-item-avatar-image">
+                        <span>AS</span>
+                      </div>
+                      <div class="product-detail__features-review-item-avatar-info">
+                        <h4>Akhmed Samani</h4>
+                        <div class="product-detail__rating">
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                          <svg width="14" height="14" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rating-icon checked" d="M10.4782 1.28331C10.9572 -0.19079 13.0427 -0.19079 13.5216 1.28331L15.2329 6.55018C15.4471 7.20942 16.0615 7.65576 16.7546 7.65576H22.2925C23.8425 7.65576 24.4869 9.63914 23.233 10.5502L18.7527 13.8053C18.1919 14.2127 17.9573 14.9349 18.1715 15.5941L19.8828 20.861C20.3618 22.3351 18.6746 23.5609 17.4207 22.6499L12.9404 19.3948C12.3796 18.9873 11.6202 18.9873 11.0595 19.3948L6.5792 22.6499C5.32526 23.5609 3.63809 22.3351 4.11705 20.861L5.82836 15.5941C6.04256 14.9349 5.80791 14.2127 5.24713 13.8053L0.766858 10.5502C-0.487083 9.63914 0.157358 7.65576 1.70731 7.65576H7.24523C7.9384 7.65576 8.55272 7.20942 8.76692 6.55018L10.4782 1.28331Z" fill="#CBD5E1"/>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-detail__features-review-btn">
+                        <a href="#"><img src="./images/delete-icon-feedback.svg"/></a>
+                        <a href="#"><img src="./images/open-icon-feedback.svg"/></a>
+                      </div>
+                    </div>
+
+                    <p class="product-detail__features-review-item-text">
+                      <strong>Very Cooooooool!</strong>
+                      The new M2 chip makes the 13‑inch MacBook Pro more capable than ever. The same compact design supports up to 20 hours of battery life1 and an active cooling system to sustain enhanced performance. Featuring a brilliant Retina display, a FaceTime HD camera, and studio‑quality mics, it’s our most portable pro laptop.
+                    </p>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="product-detail__features-slider">
+              <div class="product-detail__features-slider-header">
+                <h4>Для сравнения</h4>
+                <span>Найдено 5 товаров данного типа</span>
+              </div>
+
+              <div class="main__new-products">
+                <div class="products__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+    
+    
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 1.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Мобильный очиститель воздуха AIRPURIFIER10</p>
+                        <h4 class="product__card-price">290 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+                      </div>
+    
+    
+                    </div>
+                    <div class="swiper-slide">
+    
+    
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 2.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Электронная система упаковки FR 305</p>
+                        <h4 class="product__card-price">2850 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+                      </div>
+    
+    
+                    </div>
+                    <div class="swiper-slide">
+    
+    
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Ветеринарный ультразвуковой сканер на платформе MyLab X Ветеринарный ультразвуковой сканер на платформе MyLab X</p>
+                        <h4 class="product__card-price">3890 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+                      </div>
+    
+    
+                    </div>
+                    <div class="swiper-slide">
+    
+                      
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+                      </div>
+    
+    
+                    </div>
+                    <div class="swiper-slide">
+    
+    
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+                      </div>
+                    </div>
+    
+    
+                  </div>
+                </div>
+    
+                <div class="swiper-custom-nav-button swiper-custom-nav-button-prev">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                    <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M29.3314 17.4686C29.9562 18.0935 29.9562 19.1065 29.3314 19.7314L24.0627 25L29.3314 30.2686C29.9562 30.8935 29.9562 31.9065 29.3314 32.5314C28.7065 33.1562 27.6935 33.1562 27.0686 32.5314L20.6686 26.1314C20.0438 25.5065 20.0438 24.4935 20.6686 23.8686L27.0686 17.4686C27.6935 16.8438 28.7065 16.8438 29.3314 17.4686Z" fill="#14B8A6"/>
+                  </svg>
+                </div>
+    
+                <div class="swiper-custom-nav-button swiper-custom-nav-button-next">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                    <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M20.6686 32.5314C20.0437 31.9065 20.0437 30.8935 20.6686 30.2686L25.9372 25L20.6686 19.7314C20.0437 19.1065 20.0437 18.0935 20.6686 17.4686C21.2934 16.8438 22.3065 16.8438 22.9313 17.4686L29.3313 23.8686C29.9562 24.4935 29.9562 25.5065 29.3313 26.1314L22.9313 32.5314C22.3065 33.1562 21.2934 33.1562 20.6686 32.5314Z" fill="#14B8A6"/>
+                  </svg>
+                </div>
+    
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <img
+                  class="footer__info-logo"
+                  src="./images/white-logo.svg"
+                  alt="logo"
+                />
+                <a class="footer__info-phone" href="tel:+998711000001"
+                  >+998 71 100 00 01</a
+                >
+                <a class="footer__info-mail" href="mailto:support@toptez.uz"
+                  >support@toptez.uz</a
+                >
+              </div>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">Стать партнером</li>
+                  <li class="footer__menu-item">Часто задаваемые вопросы</li>
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Наши услуги</li>
+                  <li class="footer__menu-item">Список брендов</li>
+                </ul>
+              </nav>
+              <div class="footer__mail">
+                <h5 class="footer__mail-title">Подписаться на новости</h5>
+                <form class="footer__mail-form" action="" method="">
+                  <div class="footer__mail-icon">
+                    <img src="./images/input-email-icon.svg" alt="" />
+                  </div>
+                  <input
+                    name="email"
+                    class="footer__mail-input"
+                    type="email"
+                    placeholder="Введите эл. почту"
+                  />
+                  <button type="submit" class="footer__mail-button">
+                    <img
+                      src="./images/arrow-right-icon.svg"
+                      alt="right arrow"
+                    />
+                  </button>
+                </form>
+              </div>
+              <div class="footer__social">
+                <h5 class="footer__social-title">Наши соц. сети</h5>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <img src="./images/instagram-icon.svg" alt="instagram" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/facebook-icon.svg" alt="facebook" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/pinterest-icon.svg" alt="pinterest" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/twitter-icon.svg" alt="twitter" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="copyright-text">
+              2023 © Узбекистан. Все права защищены
+            </div>
+            <div class="copyright-link">
+              <a class="link-item" href="#">Политика конфиденциальности</a>
+              <a class="link-item" href="#">Пользовательское соглашение</a>
+              <a class="link-item" href="#">Управление файлами cookie</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="subscribe-modal">
+          <form class="subscribe-modal__form">
+            <h3 class="subscribe-modal__header">Подписаться на новости</h3>
+
+            <p class="subscribe-modal__text">
+              На вашу почту (<span class="subscribe-modal__email">(robert.fox@toptez.uz)</span>) будете получать новости о товарах в выбранных категориях:
+            </p>
+
+            <input class="subscribe-modal__email-form" type="hidden" name="email" />
+
+            <div class="subscribe-modal__all-categories">
+              <input type="checkbox" id="all_categories" name="all_categories" />
+              <label for="all_categories">Все категории</label>
+            </div>
+
+            <nav class="subscribe-modal__checkbox-nav">
+
+              <ul class="subscribe-modal__checkbox-list">
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="health_services" name="health_services" />
+                  <label for="health_services">МЕДИКО-САНИТАРНЫЕ УСЛУГИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="secondary_health_care" name="secondary_health_care" />
+                  <label for="secondary_health_care">ВТОРИЧНАЯ МЕДИЦИНСКАЯ ПОМОЩЬ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="operating_units" name="operating_units" />
+                  <label for="operating_units">ОПЕРАЦИОННЫЕ БЛОКИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="dentistry" name="dentistry" />
+                  <label for="dentistry">СТОМАТОЛОГИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="medical_imaging" name="medical_imaging" />
+                  <label for="medical_imaging">МЕДИЦИНСКАЯ ВИЗУАЛИЗАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="rehabilitation" name="rehabilitation" />
+                  <label for="rehabilitation">РЕАБИЛИТАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="comfort_well_being" name="comfort_well_being" />
+                  <label for="comfort_well_being">КОМФОРТ, ХОРОШЕЕ САМОЧУВСТВИЕ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="veterinary" name="veterinary" />
+                  <label for="veterinary">ВЕТЕРИНАРИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="technical_platform" name="technical_platform" />
+                  <label for="technical_platform">ТЕХНИЧЕСКАЯ ПЛАТФОРМА</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="laboratory" name="laboratory" />
+                  <label for="laboratory">ЛАБОРАТОРНОЕ ДЕЛО</label>
+                </li>
+
+              </ul>
+
+            </nav>
+
+            <div class="subscribe-modal__checkbox-button">
+              <button class="subscribe-modal__checkbox-close" type="button">Отмена</button>
+              <button class="subscribe-modal__checkbox-send" type="submit">Подтвердить</button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="./js/catalog.js"></script>
+  </body>
+</html>

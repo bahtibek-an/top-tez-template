@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <!-- header top  -->
+    <header class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item">
+                <span>Выбранный город: </span>
+                <form class="select-form" action="form" method="">
+                  <select>
+                    <option value="tashkent" selected>Ташкент</option>
+                    <option value="samarkand">Самарканд</option>
+                    <option value="nukus">Нукус</option>
+                  </select>
+                </form>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="tel:+998711000001">
+                  <img src="./images/contact-icon.svg" alt="" />
+                  <span>Горячая линия: +998 71 100 00 01</span>
+                </a>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="mailto:support@toptez.uz">
+                  <img src="./images/email-icon.svg" alt="" />
+                  <span>Эл. почта: support@toptez.uz</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="#">
+                  <img src="./images/help-icon.svg" alt="" />
+                  <span>Помощь</span>
+                </a>
+              </li>
+              <li class="header-top__list-item">
+                <span>Изменить язык: </span>
+                <form class="select-form" action="" method="">
+                  <select onchange="this.form.submit()">
+                    <option value="ru" selected>Русский</option>
+                    <option value="uz">Узбекский</option>
+                  </select>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header top end  -->
+
+    <!-- header mobile begin  -->
+
+    <header class="mobile-header">
+      <div class="container">
+        <div class="mobile-header__content">
+          <div class="mobile-header__inner">
+            <div class="mobile-header__hamburger">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <a class="mobile-header__logo" href="#"><img src="./images/logo.svg" alt="logo" /></a>
+            <ul class="mobile-header__list">
+              <li class="mobile-header__item">
+                <a class="mobile-header__item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="mobile-header__form" action="" method="">
+            <input
+              class="mobile-header__form-input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="mobile-header__form-btn">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mobile__right-menu">
+        <div class="mobile__right-menu__inner">
+
+          <div class="mobile__right-menu-close-btn"></div>
+
+          <a class="mobile__right-menu-contact" href="tel:+998711000001">
+            <img src="./images/contact-icon.svg" alt="" />
+            <span>Горячая линия: +998 71 100 00 01</span>
+          </a>
+
+          <a class="mobile__right-menu-contact" href="mailto:support@toptez.uz">
+            <img src="./images/email-icon.svg" alt="" />
+            <span>Эл. почта: support@toptez.uz</span>
+          </a>
+
+          <div class="mobile__right-menu-selected"> 
+            <span>Выбранный город: </span>
+            <form class="select-form" action="form" method="">
+              <select>
+                <option value="tashkent" selected>Ташкент</option>
+                <option value="samarkand">Самарканд</option>
+                <option value="nukus">Нукус</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="mobile__right-menu-selected">
+            <span>Изменить язык: </span>
+              <form class="select-form" action="" method="">
+                <select>
+                  <option value="ru" selected>Русский</option>
+                  <option value="uz">Узбекский</option>
+                </select>
+              </form>
+          </div>
+
+          
+          <ul class="mobile__right-menu-list">
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Сравнение
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Избранные
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="">
+                Помощь
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- header mobile end  -->
+
+    
+
+    <!-- main header  -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <form class="form" action="" method="">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="form__button">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+          <nav class="menu menu__header">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="compared" />
+                  <span>Сравнение<i class="link-badge">4</i></span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="favorites" />
+                  <span>Избранные</span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+     <!-- subcsribe share modal begin  -->
+
+     <div class="link__share-modal">
+      <div class="link__share-modal-content">
+        <div class="link__share-modal-header">
+          <h4>Поделиться ссылкой в соц-сетях</h4>
+          <button class="link__share-modal-close" type="button"><img src="./images/close-icon.svg"/></button>
+        </div>
+
+        <ul class="link__share-modal-socialicon-list">
+          <li class="link__share-modal-socialicon-item">
+            <a class="link__share-facebook-link-icon" target="_blank" href="#" >
+              <svg viewBox="0 0 60 60" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M28.4863253 59.9692983c-6.6364044-.569063-11.5630204-2.3269561-16.3219736-5.8239327C4.44376366 48.4721168 3e-7 39.6467924 3e-7 29.9869344c0-14.8753747 10.506778-27.18854591 25.2744118-29.61975392 6.0281072-.9924119 12.7038532.04926445 18.2879399 2.85362966C57.1386273 10.0389054 63.3436516 25.7618627 58.2050229 40.3239688 54.677067 50.3216743 45.4153135 57.9417536 34.81395 59.5689067c-2.0856252.3201125-5.0651487.5086456-6.3276247.4003916z" fill="#3B5998" fill-rule="nonzero"></path>
+                  <path d="M25.7305108 45h5.4583577V30.0073333h4.0947673l.8098295-4.6846666h-4.9045968V21.928c0-1.0943333.7076019-2.2433333 1.7188899-2.2433333h2.7874519V15h-3.4161354v.021c-5.3451414.194-6.4433395 3.2896667-6.5385744 6.5413333h-.0099897v3.7603334H23v4.6846666h2.7305108V45z" fill="#FFF"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+
+          <li class="link__share-modal-socialicon-item">
+            <a class="link__share-twitter-link-icon" target="_blank" href="#">
+              <svg viewBox="0 0 60 60" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="M28.486325 59.969298c-6.636404-.569063-11.56302-2.326956-16.321973-5.823932C4.443764 48.472116 0 39.646792 0 29.986934 0 15.11156 10.506778 2.798388 25.274412.36718c6.028107-.992411 12.703853.049265 18.28794 2.85363 13.576275 6.818095 19.7813 22.541053 14.64267 37.103159-3.527955 9.997705-12.789708 17.617785-23.391072 19.244938-2.085625.320112-5.065149.508645-6.327625.400391z" fill="#1DA1F2" fill-rule="nonzero"></path>
+                  <path d="M45.089067 17.577067c-.929778.595555-3.064534 1.460977-4.117334 1.460977v.001778C39.7696 17.784 38.077156 17 36.200178 17c-3.645511 0-6.6016 2.956089-6.6016 6.600178 0 .50631.058666 1.000178.16711 1.473778h-.001066c-4.945066-.129778-10.353422-2.608356-13.609244-6.85049-2.001778 3.46489-.269511 7.3184 2.002133 8.72249-.7776.058666-2.209067-.0896-2.882844-.747023-.045156 2.299734 1.060622 5.346845 5.092622 6.452267-.776533.417778-2.151111.297956-2.7488.209067.209778 1.941333 2.928355 4.479289 5.901155 4.479289C22.46009 38.565156 18.4736 40.788089 14 40.080889 17.038222 41.929422 20.5792 43 24.327111 43c10.650667 0 18.921956-8.631822 18.4768-19.280356-.001778-.011733-.001778-.023466-.002844-.036266.001066-.027378.002844-.054756.002844-.0832 0-.033067-.002844-.064356-.003911-.096356.9696-.66311 2.270578-1.836089 3.2-3.37991-.539022.296888-2.156089.891377-3.6608 1.038932.965689-.521244 2.396444-2.228266 2.749867-3.585777" fill="#FFF"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+
+          <li class="link__share-modal-socialicon-item">
+          </li>
+
+        </ul>
+
+        <div class="link__share-modal-input">
+          <input class="admin-input" type="url" />
+          <button class="admin-btn-success-out" type="button">Копировать</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- subscribe share modal end  -->
+
+    <!-- main header end  -->
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="container">
+            <div class="favorite__products">
+                <div class="favorite__products-header">
+                    <h2>Избранные</h2>
+                    <span>Найдено 12 товаров</span>
+                </div>
+                <div class="favorite__products-list">
+                    
+                    <!-- product item begin  -->
+
+                    <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 2.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Электронная система упаковки FR 305</p>
+                        <h4 class="product__card-price">2850 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Ветеринарный ультразвуковой сканер на платформе MyLab X Ветеринарный ультразвуковой сканер на платформе MyLab X</p>
+                        <h4 class="product__card-price">3890 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                    <!-- product item begin  -->
+
+                    <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                    <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 2.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Электронная система упаковки FR 305</p>
+                        <h4 class="product__card-price">2850 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Ветеринарный ультразвуковой сканер на платформе MyLab X Ветеринарный ультразвуковой сканер на платформе MyLab X</p>
+                        <h4 class="product__card-price">3890 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                    <!-- product item begin  -->
+
+                    <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                    <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+                        
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 2.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Электронная система упаковки FR 305</p>
+                        <h4 class="product__card-price">2850 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                      <!-- product item begin  -->
+
+                      <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Ветеринарный ультразвуковой сканер на платформе MyLab X Ветеринарный ультразвуковой сканер на платформе MyLab X</p>
+                        <h4 class="product__card-price">3890 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+                    <!-- product item begin  -->
+
+                    <div class="product__card">
+                        <div class="product__card-image">
+                          <div class="product__card-share-button">
+                            <img src="./images/share-icon.svg"/>
+                          </div>
+                          <div class="product__card-favorite favorite-is-active">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                                  <g clip-path="url(#clip0_4_374)">
+                                      <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                                  </g>
+                              <defs>
+                                  <clipPath id="clip0_4_374">
+                                      <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                                  </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <img src="./images/product-images/image 3.png" alt=""/>
+                        </div>
+                        <p class="product__card-text">Видеоларингоскоп</p>
+                        <h4 class="product__card-price">59 USD</h4>
+                        <button class="product__card-button">Сравнить товар</button>
+
+                        <div class="link__share-links">
+                          <span class="link__share-self-link">http://localhost:3000/favorite.html</span>
+                          <span class="link__share-facebook-link">https://ru-ru.facebook.com/</span>
+                          <span class="link__share-twitter-link">https://help.twitter.com/ru/using-twitter/tweet-and-moment-url</span>  
+                        </div>
+
+                      </div>
+
+                      <!-- product item end  -->
+
+
+
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <img
+                  class="footer__info-logo"
+                  src="./images/white-logo.svg"
+                  alt="logo"
+                />
+                <a class="footer__info-phone" href="tel:+998711000001"
+                  >+998 71 100 00 01</a
+                >
+                <a class="footer__info-mail" href="mailto:support@toptez.uz"
+                  >support@toptez.uz</a
+                >
+              </div>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">Стать партнером</li>
+                  <li class="footer__menu-item">Часто задаваемые вопросы</li>
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Наши услуги</li>
+                  <li class="footer__menu-item">Список брендов</li>
+                </ul>
+              </nav>
+              <div class="footer__mail">
+                <h5 class="footer__mail-title">Подписаться на новости</h5>
+                <form class="footer__mail-form" action="" method="">
+                  <div class="footer__mail-icon">
+                    <img src="./images/input-email-icon.svg" alt="" />
+                  </div>
+                  <input
+                    name="email"
+                    class="footer__mail-input"
+                    type="email"
+                    placeholder="Введите эл. почту"
+                  />
+                  <button type="submit" class="footer__mail-button">
+                    <img
+                      src="./images/arrow-right-icon.svg"
+                      alt="right arrow"
+                    />
+                  </button>
+                </form>
+              </div>
+              <div class="footer__social">
+                <h5 class="footer__social-title">Наши соц. сети</h5>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <img src="./images/instagram-icon.svg" alt="instagram" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/facebook-icon.svg" alt="facebook" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/pinterest-icon.svg" alt="pinterest" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/twitter-icon.svg" alt="twitter" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="copyright-text">
+              2023 © Узбекистан. Все права защищены
+            </div>
+            <div class="copyright-link">
+              <a class="link-item" href="#">Политика конфиденциальности</a>
+              <a class="link-item" href="#">Пользовательское соглашение</a>
+              <a class="link-item" href="#">Управление файлами cookie</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="subscribe-modal">
+          <form class="subscribe-modal__form">
+            <h3 class="subscribe-modal__header">Подписаться на новости</h3>
+
+            <p class="subscribe-modal__text">
+              На вашу почту (<span class="subscribe-modal__email">(robert.fox@toptez.uz)</span>) будете получать новости о товарах в выбранных категориях:
+            </p>
+
+            <input class="subscribe-modal__email-form" type="hidden" name="email" />
+
+            <div class="subscribe-modal__all-categories">
+              <input type="checkbox" id="all_categories" name="all_categories" />
+              <label for="all_categories">Все категории</label>
+            </div>
+
+            <nav class="subscribe-modal__checkbox-nav">
+
+              <ul class="subscribe-modal__checkbox-list">
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="health_services" name="health_services" />
+                  <label for="health_services">МЕДИКО-САНИТАРНЫЕ УСЛУГИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="secondary_health_care" name="secondary_health_care" />
+                  <label for="secondary_health_care">ВТОРИЧНАЯ МЕДИЦИНСКАЯ ПОМОЩЬ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="operating_units" name="operating_units" />
+                  <label for="operating_units">ОПЕРАЦИОННЫЕ БЛОКИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="dentistry" name="dentistry" />
+                  <label for="dentistry">СТОМАТОЛОГИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="medical_imaging" name="medical_imaging" />
+                  <label for="medical_imaging">МЕДИЦИНСКАЯ ВИЗУАЛИЗАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="rehabilitation" name="rehabilitation" />
+                  <label for="rehabilitation">РЕАБИЛИТАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="comfort_well_being" name="comfort_well_being" />
+                  <label for="comfort_well_being">КОМФОРТ, ХОРОШЕЕ САМОЧУВСТВИЕ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="veterinary" name="veterinary" />
+                  <label for="veterinary">ВЕТЕРИНАРИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="technical_platform" name="technical_platform" />
+                  <label for="technical_platform">ТЕХНИЧЕСКАЯ ПЛАТФОРМА</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="laboratory" name="laboratory" />
+                  <label for="laboratory">ЛАБОРАТОРНОЕ ДЕЛО</label>
+                </li>
+
+              </ul>
+
+            </nav>
+
+            <div class="subscribe-modal__checkbox-button">
+              <button class="subscribe-modal__checkbox-close" type="button">Отмена</button>
+              <button class="subscribe-modal__checkbox-send" type="submit">Подтвердить</button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="./js/catalog.js"></script>
+  </body>
+</html>

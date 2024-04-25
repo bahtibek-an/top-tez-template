@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth">
+            <div class="auth__container">
+                <div class="auth__header">
+                    <div class="auth__header-icon">
+                        <img src="./images/logo.svg" alt="logo"/>
+                    </div>
+                    <!-- <div class="auth__header-translate">Русский</div> -->
+                    <div class="auth__header-translate">
+                        <form action="auth__header-form" method="">
+                            <select class="auth__header-form-translate" name="">
+                                <option value="ru" selected>Русский</option>
+                                <option value="uz">Узбекский</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="auth__form">
+                    <h2>Общая информация</h2>
+                    <form action="" method="">
+                        <label class="mt-24" for="full_name">ФИО</label>
+                        <input class="form-control" type="text" id="full_name" name="full_name" placeholder="Введите полное имя"/>
+                        <label class="mt-24" for="phone_number">Номер телефона</label>
+                        <input class="form-control" type="text" id="phone_number" name="phone_number" placeholder="Номер телефон" value="+998"/>
+                        <div class="auth__bottom">
+                            <div></div>
+                            <button class="auth__bottom-btn" type="submit">Подтвердить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="auth-background">
+            <img src="./images/auth-background.png" alt=""/>
+        </div>
+    </div>
+</body>
+</html>

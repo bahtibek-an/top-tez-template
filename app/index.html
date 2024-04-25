@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <!-- header top  -->
+    <header class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item">
+                <span>Выбранный город: </span>
+                <form class="select-form" action="form" method="">
+                  <select>
+                    <option value="tashkent" selected>Ташкент</option>
+                    <option value="samarkand">Самарканд</option>
+                    <option value="nukus">Нукус</option>
+                  </select>
+                </form>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="tel:+998711000001">
+                  <img src="./images/contact-icon.svg" alt="" />
+                  <span>Горячая линия: +998 71 100 00 01</span>
+                </a>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="mailto:support@toptez.uz">
+                  <img src="./images/email-icon.svg" alt="" />
+                  <span>Эл. почта: support@toptez.uz</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="#">
+                  <img src="./images/help-icon.svg" alt="" />
+                  <span>Помощь</span>
+                </a>
+              </li>
+              <li class="header-top__list-item">
+                <span>Изменить язык: </span>
+                <form class="select-form" action="" method="">
+                  <select onchange="this.form.submit()">
+                    <option value="ru" selected>Русский</option>
+                    <option value="uz">Узбекский</option>
+                  </select>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <!-- header top end  -->
+
+    <!-- header mobile begin  -->
+
+    <header class="mobile-header">
+      <div class="container">
+        <div class="mobile-header__content">
+          <div class="mobile-header__inner">
+            <div class="mobile-header__hamburger">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <a class="mobile-header__logo" href="#"><img src="./images/logo.svg" alt="logo" /></a>
+            <ul class="mobile-header__list">
+              <li class="mobile-header__item">
+                <a class="mobile-header__item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="mobile-header__form" action="" method="">
+            <input
+              class="mobile-header__form-input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="mobile-header__form-btn">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mobile__right-menu">
+        <div class="mobile__right-menu__inner">
+
+          <div class="mobile__right-menu-close-btn"></div>
+
+          <a class="mobile__right-menu-contact" href="tel:+998711000001">
+            <img src="./images/contact-icon.svg" alt="" />
+            <span>Горячая линия: +998 71 100 00 01</span>
+          </a>
+
+          <a class="mobile__right-menu-contact" href="mailto:support@toptez.uz">
+            <img src="./images/email-icon.svg" alt="" />
+            <span>Эл. почта: support@toptez.uz</span>
+          </a>
+
+          <div class="mobile__right-menu-selected"> 
+            <span>Выбранный город: </span>
+            <form class="select-form" action="form" method="">
+              <select>
+                <option value="tashkent" selected>Ташкент</option>
+                <option value="samarkand">Самарканд</option>
+                <option value="nukus">Нукус</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="mobile__right-menu-selected">
+            <span>Изменить язык: </span>
+              <form class="select-form" action="" method="">
+                <select>
+                  <option value="ru" selected>Русский</option>
+                  <option value="uz">Узбекский</option>
+                </select>
+              </form>
+          </div>
+
+          
+          <ul class="mobile__right-menu-list">
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Сравнение
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Избранные
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="">
+                Помощь
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- header mobile end  -->
+
+    
+
+    <!-- main header  -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <form class="form" action="" method="">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="form__button">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+          <nav class="menu menu__header">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="compared" />
+                  <span>Сравнение<i class="link-badge">4</i></span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="favorites" />
+                  <span>Избранные</span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main header end  -->
+
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="container">
+
+          <!-- hero  -->
+          <div class="main__hero">
+
+            <!-- hero slider  -->
+
+            <div class="slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/slider-img.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider-img.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/slider-img.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="slider-bg"></div>
+            </div>
+
+            <!-- hero slider end  -->
+
+            <!-- hero hot product  -->
+
+            <div class="main__hero__hot-product">
+              <div class="hot-product__header">
+                <h5>Товар дня</h5>
+                <a href="#"
+                  ><img src="./images/link-icon.svg" alt="link-icon"
+                /></a>
+              </div>
+              <div class="hot-product__image">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/hot-product-image.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/hot-product-image.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/hot-product-image.png" alt="" />
+                  </div>
+                </div>
+                <p class="hot-product__name">Видеоларингоскоп</p>
+                <h4 class="hot-product__price">59 USD</h4>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <!-- hero hot product end  -->
+
+          </div>
+
+          <!-- hero end  -->
+
+          <!-- all categories  -->
+
+          <div class="card__header"><h3>Все категории</h3></div>
+          <div class="main__categories">
+            <ul class="main__categories-list">
+
+              <!-- all categories item  -->
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">
+                    МЕДИКО-САНИТАРНЫЕ УСЛУГИ
+                  </p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+              <!-- all categories item end  -->
+              
+              <!-- all categories item  -->
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">РЕАБИЛИТАЦИЯ</p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+              <!-- all categories item end  -->
+
+              <!-- all categories item  -->
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">
+                    МЕДИЦИНСКАЯ ВИЗУАЛИЗАЦИЯ
+                  </p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+              <!-- all categories item end  -->
+
+              <!-- all categories item  -->
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">МЕБЕЛЬ, ЛОГИСТИКА</p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+              <!-- all categories item end  -->
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">
+                    ВТОРИЧНАЯ МЕДИЦИНСКАЯ ПОМОЩЬ
+                  </p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">ЛАБОРАТОРНОЕ ДЕЛО</p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">
+                    МЕДИЦИНСКИЕ РАСХОДНЫЕ МАТЕРИАЛЫ
+                  </p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">ОПЕРАЦИОННЫЕ БЛОКИ</p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">ВЕТЕРИНАРИЯ</p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">
+                    СТЕРИЛИЗАЦИЯ, ДЕЗИНФЕКЦИЯ
+                  </p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">СТОМАТОЛОГИЯ</p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">
+                    ТЕХНИЧЕСКАЯ ПЛАТФОРМА
+                  </p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="main__categories-item">
+                <a class="main__categories-item-link" href="#">
+                  <p class="main__categoriees-item-text">
+                    МЕДИЦИНСКАЯ И ФАРМАЦЕВТИЧЕСКАЯ ПРОМЫШЛЕННОСТЬ
+                  </p>
+                  <div class="main__categories-item-arrow">
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C16.0976 6.68342 16.0976 7.31658 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447716 8 0 7.55229 0 7C0 6.44772 0.447716 6 1 6H12.5858L8.29289 1.70711C7.90237 1.31658 7.90237 0.683418 8.29289 0.292893Z"
+                        fill="#14B8A6"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </li>
+
+
+            </ul>
+            
+          </div>
+
+          <!-- all categories end  -->
+
+          <!-- new products  -->
+
+          <div class="card__header"><h3>Новые товары</h3></div>
+          <div class="main__new-products">
+            <div class="products__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 1.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Мобильный очиститель воздуха AIRPURIFIER10</p>
+                    <h4 class="product__card-price">290 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite favorite-is-active">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 2.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Электронная система упаковки FR 305</p>
+                    <h4 class="product__card-price">2850 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Ветеринарный ультразвуковой сканер на платформе MyLab X Ветеринарный ультразвуковой сканер на платформе MyLab X</p>
+                    <h4 class="product__card-price">3890 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+                  
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite favorite-is-active">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Видеоларингоскоп</p>
+                    <h4 class="product__card-price">59 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Видеоларингоскоп</p>
+                    <h4 class="product__card-price">59 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="swiper-custom-nav-button swiper-custom-nav-button-prev">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M29.3314 17.4686C29.9562 18.0935 29.9562 19.1065 29.3314 19.7314L24.0627 25L29.3314 30.2686C29.9562 30.8935 29.9562 31.9065 29.3314 32.5314C28.7065 33.1562 27.6935 33.1562 27.0686 32.5314L20.6686 26.1314C20.0438 25.5065 20.0438 24.4935 20.6686 23.8686L27.0686 17.4686C27.6935 16.8438 28.7065 16.8438 29.3314 17.4686Z" fill="#14B8A6"/>
+              </svg>
+            </div>
+
+            <div class="swiper-custom-nav-button swiper-custom-nav-button-next">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M20.6686 32.5314C20.0437 31.9065 20.0437 30.8935 20.6686 30.2686L25.9372 25L20.6686 19.7314C20.0437 19.1065 20.0437 18.0935 20.6686 17.4686C21.2934 16.8438 22.3065 16.8438 22.9313 17.4686L29.3313 23.8686C29.9562 24.4935 29.9562 25.5065 29.3313 26.1314L22.9313 32.5314C22.3065 33.1562 21.2934 33.1562 20.6686 32.5314Z" fill="#14B8A6"/>
+              </svg>
+            </div>
+
+          </div>
+
+          <!-- new products end  -->
+
+          <!-- popular products  -->
+
+          <div class="card__header"><h3>Популярные товары</h3></div>
+          <div class="main__new-products">
+            <div class="popular__products-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 1.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Мобильный очиститель воздуха AIRPURIFIER10</p>
+                    <h4 class="product__card-price">290 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 2.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Электронная система упаковки FR 305</p>
+                    <h4 class="product__card-price">2850 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Ветеринарный ультразвуковой сканер на платформе MyLab X Ветеринарный ультразвуковой сканер на платформе MyLab X</p>
+                    <h4 class="product__card-price">3890 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Видеоларингоскоп</p>
+                    <h4 class="product__card-price">59 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Видеоларингоскоп</p>
+                    <h4 class="product__card-price">59 USD</h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-swiper-custom-nav-button popular-swiper-custom-nav-button-prev">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M29.3314 17.4686C29.9562 18.0935 29.9562 19.1065 29.3314 19.7314L24.0627 25L29.3314 30.2686C29.9562 30.8935 29.9562 31.9065 29.3314 32.5314C28.7065 33.1562 27.6935 33.1562 27.0686 32.5314L20.6686 26.1314C20.0438 25.5065 20.0438 24.4935 20.6686 23.8686L27.0686 17.4686C27.6935 16.8438 28.7065 16.8438 29.3314 17.4686Z" fill="#14B8A6"/>
+              </svg>
+            </div>
+
+            <div class="popular-swiper-custom-nav-button popular-swiper-custom-nav-button-next">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M20.6686 32.5314C20.0437 31.9065 20.0437 30.8935 20.6686 30.2686L25.9372 25L20.6686 19.7314C20.0437 19.1065 20.0437 18.0935 20.6686 17.4686C21.2934 16.8438 22.3065 16.8438 22.9313 17.4686L29.3313 23.8686C29.9562 24.4935 29.9562 25.5065 29.3313 26.1314L22.9313 32.5314C22.3065 33.1562 21.2934 33.1562 20.6686 32.5314Z" fill="#14B8A6"/>
+              </svg>
+            </div>
+
+
+          </div>
+
+          <div class="card__header"><h3>Акции</h3></div>
+
+          <div class="main__new-products">
+            <div class="popular__products-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 1.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Мобильный очиститель воздуха AIRPURIFIER10</p>
+                    <h4 class="product__card-price">290 USD <span>330 USD</span></h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 2.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Электронная система упаковки FR 305</p>
+                    <h4 class="product__card-price">2850 USD <span>3300 USD</span></h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Ветеринарный ультразвуковой сканер на платформе MyLab X Ветеринарный ультразвуковой сканер на платформе MyLab X</p>
+                    <h4 class="product__card-price">3890 USD <span>330 USD</span></h4>
+                    <button class="product__card-button is_active">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Видеоларингоскоп</p>
+                    <h4 class="product__card-price">59 USD <span>530 USD</span></h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+                <div class="swiper-slide">
+
+
+                  <div class="product__card">
+                    <div class="product__card-image">
+
+                      <div class="product__cart-brand">
+                        <img src="./images/brands/ulma-brand.png" alt="brand"/>
+                      </div>
+
+                      <div class="product__card-favorite">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="40" height="40" rx="20" fill="#F1F5F9"/>
+                              <g clip-path="url(#clip0_4_374)">
+                                  <path d="M19.049 10.9266C19.3483 10.0054 20.6517 10.0054 20.951 10.9266L22.4699 15.6005C22.6038 16.0125 22.9877 16.2915 23.4209 16.2915L28.3354 16.2917C29.3041 16.2917 29.7068 17.5313 28.9232 18.1007L24.9474 20.9895C24.5969 21.2441 24.4503 21.6955 24.5841 22.1075L26.1026 26.7815C26.4019 27.7028 25.3475 28.4689 24.5638 27.8995L20.5878 25.011C20.2373 24.7564 19.7627 24.7564 19.4122 25.011L15.4362 27.8995C14.6525 28.4689 13.5981 27.7028 13.8974 26.7815L15.4159 22.1075C15.5497 21.6955 15.4031 21.2441 15.0526 20.9895L11.0768 18.1007C10.2932 17.5313 10.6959 16.2917 11.6646 16.2917L16.5791 16.2915C17.0123 16.2915 17.3962 16.0125 17.5301 15.6005L19.049 10.9266Z" stroke="#94A3B8" stroke-width="2"/>
+                              </g>
+                          <defs>
+                              <clipPath id="clip0_4_374">
+                                  <rect width="24" height="24" fill="white" transform="translate(8 8)"/>
+                              </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <img src="./images/product-images/image 3.png" alt=""/>
+                    </div>
+                    <p class="product__card-text">Видеоларингоскоп</p>
+                    <h4 class="product__card-price">59 USD <span>930 USD</span></h4>
+                    <button class="product__card-button">Сравнить товар</button>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-swiper-custom-nav-button popular-swiper-custom-nav-button-prev">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M29.3314 17.4686C29.9562 18.0935 29.9562 19.1065 29.3314 19.7314L24.0627 25L29.3314 30.2686C29.9562 30.8935 29.9562 31.9065 29.3314 32.5314C28.7065 33.1562 27.6935 33.1562 27.0686 32.5314L20.6686 26.1314C20.0438 25.5065 20.0438 24.4935 20.6686 23.8686L27.0686 17.4686C27.6935 16.8438 28.7065 16.8438 29.3314 17.4686Z" fill="#14B8A6"/>
+              </svg>
+            </div>
+
+            <div class="popular-swiper-custom-nav-button popular-swiper-custom-nav-button-next">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F5F9"/>
+                <path class="swiper-custom-nav-button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M20.6686 32.5314C20.0437 31.9065 20.0437 30.8935 20.6686 30.2686L25.9372 25L20.6686 19.7314C20.0437 19.1065 20.0437 18.0935 20.6686 17.4686C21.2934 16.8438 22.3065 16.8438 22.9313 17.4686L29.3313 23.8686C29.9562 24.4935 29.9562 25.5065 29.3313 26.1314L22.9313 32.5314C22.3065 33.1562 21.2934 33.1562 20.6686 32.5314Z" fill="#14B8A6"/>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+        <!-- popular products end  -->
+
+        <!-- partners begin -->
+        <div class="main__partners">
+          <div class="container">
+           
+            <h3 class="main__partners-header">Партнеры</h3>
+            <div class="main__partners-brands-list">
+              <a class="main__partners-brands-item brand-kover" href="#"><img src="./images/brands/kover.png" alt=""/></a>
+              <a class="main__partners-brands-item" href="#"><img src="./images/brands/titan-medical.png" alt=""/></a>
+              <a class="main__partners-brands-item" href="#"><img src="./images/brands/aidata.png" alt=""/></a>
+              <a class="main__partners-brands-item" href="#"><img src="./images/brands/potent.png" alt=""/></a>
+              <a class="main__partners-brands-item" href="#"><img src="./images/brands/esaote.png" alt=""/></a>
+              <a class="main__partners-brands-item" href="#"><img src="./images/brands/romed.png" alt=""/></a>
+              <a class="main__partners-brands-item" href="#"><img src="./images/brands/microport.png" alt=""/></a>
+              <a class="main__partners-brands-item" href="#"><img src="./images/brands/fluke.png" alt=""/></a>
+            </div>
+          </div>
+        </div>
+        <!-- partners end  -->
+
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <img
+                  class="footer__info-logo"
+                  src="./images/white-logo.svg"
+                  alt="logo"
+                />
+                <a class="footer__info-phone" href="tel:+998711000001"
+                  >+998 71 100 00 01</a
+                >
+                <a class="footer__info-mail" href="mailto:support@toptez.uz"
+                  >support@toptez.uz</a
+                >
+              </div>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">Стать партнером</li>
+                  <li class="footer__menu-item">Часто задаваемые вопросы</li>
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Наши услуги</li>
+                  <li class="footer__menu-item">Список брендов</li>
+                </ul>
+              </nav>
+              <div class="footer__mail">
+                <h5 class="footer__mail-title">Подписаться на новости</h5>
+                <form class="footer__mail-form" action="" method="">
+                  <div class="footer__mail-icon">
+                    <img src="./images/input-email-icon.svg" alt="" />
+                  </div>
+                  <input
+                    name="email"
+                    class="footer__mail-input"
+                    type="email"
+                    placeholder="Введите эл. почту"
+                  />
+                  <button type="submit" class="footer__mail-button">
+                    <img
+                      src="./images/arrow-right-icon.svg"
+                      alt="right arrow"
+                    />
+                  </button>
+                </form>
+              </div>
+              <div class="footer__social">
+                <h5 class="footer__social-title">Наши соц. сети</h5>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <img src="./images/instagram-icon.svg" alt="instagram" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/facebook-icon.svg" alt="facebook" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/pinterest-icon.svg" alt="pinterest" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/twitter-icon.svg" alt="twitter" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="copyright-text">
+              2023 © Узбекистан. Все права защищены
+            </div>
+            <div class="copyright-link">
+              <a class="link-item" href="#">Политика конфиденциальности</a>
+              <a class="link-item" href="#">Пользовательское соглашение</a>
+              <a class="link-item" href="#">Управление файлами cookie</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="subscribe-modal">
+          <form class="subscribe-modal__form">
+            <h3 class="subscribe-modal__header">Подписаться на новости</h3>
+
+            <p class="subscribe-modal__text">
+              На вашу почту (<span class="subscribe-modal__email">(robert.fox@toptez.uz)</span>) будете получать новости о товарах в выбранных категориях:
+            </p>
+
+            <input class="subscribe-modal__email-form" type="hidden" name="email" />
+
+            <div class="subscribe-modal__all-categories">
+              <input type="checkbox" id="all_categories" name="all_categories" />
+              <label for="all_categories">Все категории</label>
+            </div>
+
+            <nav class="subscribe-modal__checkbox-nav">
+
+              <ul class="subscribe-modal__checkbox-list">
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="health_services" name="health_services" />
+                  <label for="health_services">МЕДИКО-САНИТАРНЫЕ УСЛУГИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="secondary_health_care" name="secondary_health_care" />
+                  <label for="secondary_health_care">ВТОРИЧНАЯ МЕДИЦИНСКАЯ ПОМОЩЬ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="operating_units" name="operating_units" />
+                  <label for="operating_units">ОПЕРАЦИОННЫЕ БЛОКИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="dentistry" name="dentistry" />
+                  <label for="dentistry">СТОМАТОЛОГИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="medical_imaging" name="medical_imaging" />
+                  <label for="medical_imaging">МЕДИЦИНСКАЯ ВИЗУАЛИЗАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="rehabilitation" name="rehabilitation" />
+                  <label for="rehabilitation">РЕАБИЛИТАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="comfort_well_being" name="comfort_well_being" />
+                  <label for="comfort_well_being">КОМФОРТ, ХОРОШЕЕ САМОЧУВСТВИЕ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="veterinary" name="veterinary" />
+                  <label for="veterinary">ВЕТЕРИНАРИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="technical_platform" name="technical_platform" />
+                  <label for="technical_platform">ТЕХНИЧЕСКАЯ ПЛАТФОРМА</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="laboratory" name="laboratory" />
+                  <label for="laboratory">ЛАБОРАТОРНОЕ ДЕЛО</label>
+                </li>
+
+              </ul>
+
+            </nav>
+
+            <div class="subscribe-modal__checkbox-button">
+              <button class="subscribe-modal__checkbox-close" type="button">Отмена</button>
+              <button class="subscribe-modal__checkbox-send" type="submit">Подтвердить</button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+     <!-- header top  -->
+     <header class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item">
+                <span>Выбранный город: </span>
+                <form class="select-form" action="form" method="">
+                  <select>
+                    <option value="tashkent" selected>Ташкент</option>
+                    <option value="samarkand">Самарканд</option>
+                    <option value="nukus">Нукус</option>
+                  </select>
+                </form>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="tel:+998711000001">
+                  <img src="./images/contact-icon.svg" alt="" />
+                  <span>Горячая линия: +998 71 100 00 01</span>
+                </a>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="mailto:support@toptez.uz">
+                  <img src="./images/email-icon.svg" alt="" />
+                  <span>Эл. почта: support@toptez.uz</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="#">
+                  <img src="./images/help-icon.svg" alt="" />
+                  <span>Помощь</span>
+                </a>
+              </li>
+              <li class="header-top__list-item">
+                <span>Изменить язык: </span>
+                <form class="select-form" action="" method="">
+                  <select onchange="this.form.submit()">
+                    <option value="ru" selected>Русский</option>
+                    <option value="uz">Узбекский</option>
+                  </select>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header top end  -->
+
+    <!-- header mobile begin  -->
+
+    <header class="mobile-header">
+      <div class="container">
+        <div class="mobile-header__content">
+          <div class="mobile-header__inner">
+            <div class="mobile-header__hamburger">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <a class="mobile-header__logo" href="#"><img src="./images/logo.svg" alt="logo" /></a>
+            <ul class="mobile-header__list">
+              <li class="mobile-header__item">
+                <a class="mobile-header__item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="mobile-header__form" action="" method="">
+            <input
+              class="mobile-header__form-input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="mobile-header__form-btn">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mobile__right-menu">
+        <div class="mobile__right-menu__inner">
+
+          <div class="mobile__right-menu-close-btn"></div>
+
+          <a class="mobile__right-menu-contact" href="tel:+998711000001">
+            <img src="./images/contact-icon.svg" alt="" />
+            <span>Горячая линия: +998 71 100 00 01</span>
+          </a>
+
+          <a class="mobile__right-menu-contact" href="mailto:support@toptez.uz">
+            <img src="./images/email-icon.svg" alt="" />
+            <span>Эл. почта: support@toptez.uz</span>
+          </a>
+
+          <div class="mobile__right-menu-selected"> 
+            <span>Выбранный город: </span>
+            <form class="select-form" action="form" method="">
+              <select>
+                <option value="tashkent" selected>Ташкент</option>
+                <option value="samarkand">Самарканд</option>
+                <option value="nukus">Нукус</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="mobile__right-menu-selected">
+            <span>Изменить язык: </span>
+              <form class="select-form" action="" method="">
+                <select>
+                  <option value="ru" selected>Русский</option>
+                  <option value="uz">Узбекский</option>
+                </select>
+              </form>
+          </div>
+
+          
+          <ul class="mobile__right-menu-list">
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Сравнение
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Избранные
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="">
+                Помощь
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- header mobile end  -->
+
+    
+
+    <!-- main header  -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <form class="form" action="" method="">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="form__button">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+          <nav class="menu menu__header">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="compared" />
+                  <span>Сравнение<i class="link-badge">4</i></span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="favorites" />
+                  <span>Избранные</span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main header end  -->
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="container">
+
+          <form class="account__form-product" action="" method="">
+
+            <div class="account__form-product-header">
+              <a href="#"><img src="./images/arrow-left-icon.svg" alt="arrow-left"/></a>
+              <h2>Добавить товар</h2>
+              <div class="account__form-product-header-btn">
+                <div class="account__form-product-header-switch">
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                  <span>В наличии</span>
+                </div>
+              </div>
+
+            </div>
+
+            <nav class="account__form-nav">
+
+              <ul class="account__form-list">
+                <li class="account__form-item">
+                  <label>Название товара (Рус) <span>*</span></label>
+                  <input class="account__form-input" type="text" placeholder="Напишите название товара"/>
+                </li>
+
+                <li class="account__form-item">
+                  <label>Описание товара (Рус) <span>*</span></label>
+                  <textarea class="account__form-input" type="text" placeholder="Не более 1000 символов"></textarea>
+                </li>
+              </ul>
+
+              <ul class="account__form-list">
+
+                <li class="account__form-item">
+                  <label>Название товара (UZ) <span>*</span></label>
+                  <input class="account__form-input" type="text" placeholder="Напишите название товара"/>
+                </li>
+
+                <li class="account__form-item">
+                  <label>Описание товара (UZ) <span>*</span></label>
+                  <textarea class="account__form-input" type="text" placeholder="Не более 1000 символов"></textarea>
+                </li>
+
+              </ul>
+
+              <ul class="account__form-list">
+
+                <li class="account__form-item">
+                  <label>Название товара (ENG) <span>*</span></label>
+                  <input class="account__form-input" type="text" placeholder="Напишите название товара"/>
+                </li>
+
+                <li class="account__form-item">
+                  <label>Описание товара (ENG) <span>*</span></label>
+                  <textarea class="account__form-input" type="text" placeholder="Не более 1000 символов"></textarea>
+                </li>
+
+              </ul>
+
+            </nav>
+
+            <label>Фотографии товара <span>*</span></label>
+            <div class="account__form-images">
+              <div class="account__form-images-list">
+                <img src='./images/404-main-icon.svg'/>
+              </div>
+              <div class="account__form-image-btn">
+                
+                <input class="account__form-images-file" type="file" multiple="multiple"/>
+
+                <div class="account__form-image-upload">
+                  <img src="./images/upload-icon.svg" alt="upload-icon"/>
+                  <span>Добавить новый</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="account__form-bottom">
+
+              <div class="account__form-bottom-item">
+                <label>Выберите бренд <span>*</span></label>
+                <div class="account__form-bottom-select">
+                  <select>
+                    <option value="" disabled selected hidden>Выберите из списка</option>
+                    <option>Выберите из списка 1</option>
+                    <option>Выберите из списка 2</option>
+                    <option>Выберите из списка 3</option>
+                    <option>Выберите из списка 4</option>
+                  </select>
+                  <div class="select-icon">
+                    <img src="./images/search-icon-input.svg" alt="search-icon"/>
+                  </div>
+                </div>
+                  <a class="account__form-bottom-link account__form-add-brand-link" href="#">Добавить новый бренд</a>
+              </div>
+
+              <div class="account__form-bottom-item">
+                <label>Выберите категорию товара <span>*</span></label>
+                <div class="account__form-bottom-select">
+                  <select>
+                    <option value="" disabled selected hidden>Выберите из списка</option>
+                    <option>Выберите из списка 1</option>
+                    <option>Выберите из списка 2</option>
+                    <option>Выберите из списка 3</option>
+                    <option>Выберите из списка 4</option>
+                  </select>
+                  <div class="select-icon">
+                    <img src="./images/arrow-bottom-input-icon.svg" alt="arrow-icon"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="account__form-bottom-item">
+                <label>Выберите суб-категорию товара <span>*</span></label>
+                <div class="account__form-bottom-select">
+                  <select>
+                    <option value="" disabled selected hidden>Выберите из списка</option>
+                    <option>Выберите из списка 1</option>
+                    <option>Выберите из списка 2</option>
+                    <option>Выберите из списка 3</option>
+                    <option>Выберите из списка 4</option>
+                    <option>Выберите из списка 5</option>
+                  </select>
+                  <div class="select-icon">
+                    <img src="./images/arrow-bottom-input-icon.svg" alt="arrow-icon"/>
+                  </div>
+                </div>
+                <a class="account__form-bottom-link account__form-bottom-link-edit" href="#">Редактировать характеристики</a>
+              </div>
+
+              <div class="account__form-bottom-item input">
+                <label>Цена товара <span>*</span></label>
+                <div class="account__form-bottom-select">
+                  <input class="account__form-input" type="number" value="0"/>
+                </div>
+              </div>
+
+              <div class="account__form-bottom-item input">
+                <label>Валюта</label>
+                <div class="account__form-bottom-select">
+                  <select>
+                    <option selected>USD</option>
+                    <option>UZS</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="account__form-edit-chrs-modal">
+              <div class="account__form-edit-modal-form">
+                <h3 class="account__form-edit-modal-header">Редактировать характеристики</h3>
+  
+                <ul class="account__form-edit-modal-keys-list">
+                  <li class="account__form-edit-modal-keys-item">Свойство</li>
+                  <li class="account__form-edit-modal-keys-item">Описнаие (РУС) <span>*</span></li>
+                  <li class="account__form-edit-modal-keys-item">Описнаие (UZ) <span>*</span></li>
+                  <li class="account__form-edit-modal-keys-item">Описнаие (ENG) <span>*</span></li>
+                </ul>
+  
+                <div class="account__form-edit-modal-nav">
+                  <ul class="account__form-edit-modal-values-list">
+                    <li class="account__form-edit-modal-values-item">Использование</li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                  </ul>
+  
+                  <ul class="account__form-edit-modal-values-list">
+                    <li class="account__form-edit-modal-values-item">Режим функционирования</li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                  </ul>
+  
+                  <ul class="account__form-edit-modal-values-list">
+                    <li class="account__form-edit-modal-values-item">Тип</li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+                    <li class="account__form-edit-modal-values-item">
+                      <input class="account__form-input" type="text" placeholder="Описание"/>
+                    </li>
+  
+                  </ul>
+                </div>
+  
+                <div class="account__form-edit-modal-bottom">
+                  <button class="account__form-edit-modal-cancel" type="button">Отмена</button>
+                  <button type="submit">Сохранить</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="account__form-btn">
+              <input type="reset" value="Сбросить"/>
+              <a class="account__form-cancel" href="#">Отмена</a>
+              <a class="account__form-add" href="#">Добавить товар</a>
+            </div>
+
+          </form>
+
+          <div class="account__form-modal">
+            <form class="account__form-modal-form">
+              <div class="account__form-modal-header">
+                <h3>Загрузить .xls файл</h3>
+                <a href="#">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.50001 11.5V12.5015C9.50014 12.6327 9.4744 12.7626 9.42427 12.8838C9.37414 13.005 9.30059 13.1151 9.20785 13.2078C9.1151 13.3006 9.00497 13.3741 8.88377 13.4243C8.76257 13.4744 8.63267 13.5001 8.50151 13.5H0.998506C0.867015 13.4998 0.736855 13.4737 0.615474 13.4231C0.494093 13.3726 0.383875 13.2985 0.291129 13.2053C0.198384 13.1121 0.124932 13.0015 0.0749769 12.8799C0.0250221 12.7583 -0.000454235 12.628 6.12946e-06 12.4965V1.0035C6.12946e-06 0.449 0.450006 0 1.00451 0H6.00001V3.001C6.00001 3.5565 6.44901 4 7.00301 4H9.50001V5H5.00351C4.80633 4.99974 4.61103 5.03831 4.42875 5.11353C4.24648 5.18874 4.08081 5.29912 3.9412 5.43836C3.80159 5.57761 3.69077 5.74298 3.61507 5.92505C3.53937 6.10712 3.50027 6.30232 3.50001 6.4995V10C3.49974 10.1974 3.53848 10.3928 3.61398 10.5751C3.68949 10.7575 3.80028 10.9231 3.93999 11.0625C4.07971 11.2019 4.24558 11.3123 4.42809 11.3874C4.61061 11.4624 4.80616 11.5007 5.00351 11.5H9.50001ZM6.50001 0V2.9985C6.50001 3.2755 6.72551 3.5 6.99501 3.5H9.50001L6.50001 0ZM4.99751 5.5C4.44651 5.5 4.00001 5.95 4.00001 6.496V10.004C4.00106 10.2681 4.10654 10.521 4.29342 10.7076C4.48031 10.8942 4.73341 10.9993 4.99751 11H13.5025C14.0535 11 14.5 10.55 14.5 10.004V6.496C14.499 6.23191 14.3935 5.97896 14.2066 5.79236C14.0197 5.60576 13.7666 5.50066 13.5025 5.5H4.99751ZM6.00001 8.25L5.00001 6.5H5.50001L6.25001 7.8125L7.00001 6.5H7.50001L6.50001 8.25L7.50001 10H7.00001L6.25001 8.6875L5.50001 10H5.00001L6.00001 8.25ZM10.5 9.5V10H8.00001V6.5H8.50001V9.5H10.5ZM12.0025 6.5C11.8709 6.49954 11.7406 6.52507 11.6189 6.57513C11.4972 6.62519 11.3866 6.6988 11.2935 6.79171C11.2003 6.88463 11.1265 6.99503 11.0761 7.11658C11.0257 7.23813 10.9999 7.36843 11 7.5C11 8.0525 11.444 8.5 12 8.5H12.495C12.774 8.5 13 8.722 13 9C13 9.276 12.7785 9.5 12.5005 9.5H11.9995C11.7235 9.5 11.5 9.272 11.5 9.002V8.997H11V8.9995C10.9999 9.13107 11.0258 9.26137 11.0762 9.38292C11.1266 9.50446 11.2005 9.61487 11.2936 9.70782C11.3867 9.80076 11.4973 9.87441 11.6189 9.92455C11.7406 9.97469 11.8709 10.0003 12.0025 10H12.4975C12.6291 10.0005 12.7594 9.97493 12.8811 9.92487C13.0028 9.87481 13.1134 9.8012 13.2065 9.70829C13.2997 9.61537 13.3736 9.50497 13.4239 9.38342C13.4743 9.26187 13.5001 9.13157 13.5 9C13.5 8.4475 13.056 8 12.5 8H12.005C11.726 8 11.5 7.778 11.5 7.5C11.5 7.224 11.7215 7 11.9995 7H12.5005C12.7765 7 13 7.2265 13 7.5H13.5C13.5 7.36847 13.4741 7.23823 13.4236 7.11674C13.3732 6.99525 13.2994 6.8849 13.2062 6.79201C13.1131 6.69912 13.0026 6.62551 12.881 6.5754C12.7593 6.52529 12.629 6.49967 12.4975 6.5H12.0025Z" fill="#14B8A6"/>
+                  </svg>
+                  Скачать шаблон загрузки
+                </a>
+              </div>
+              <input type="file" id="upload-file"/>
+              <label class="account__form-upload-drag" for="upload-file">
+                <svg width="36" height="33" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.50001 11.5V12.5015C9.50014 12.6327 9.4744 12.7626 9.42427 12.8838C9.37414 13.005 9.30059 13.1151 9.20785 13.2078C9.1151 13.3006 9.00497 13.3741 8.88377 13.4243C8.76257 13.4744 8.63267 13.5001 8.50151 13.5H0.998506C0.867015 13.4998 0.736855 13.4737 0.615474 13.4231C0.494093 13.3726 0.383875 13.2985 0.291129 13.2053C0.198384 13.1121 0.124932 13.0015 0.0749769 12.8799C0.0250221 12.7583 -0.000454235 12.628 6.12946e-06 12.4965V1.0035C6.12946e-06 0.449 0.450006 0 1.00451 0H6.00001V3.001C6.00001 3.5565 6.44901 4 7.00301 4H9.50001V5H5.00351C4.80633 4.99974 4.61103 5.03831 4.42875 5.11353C4.24648 5.18874 4.08081 5.29912 3.9412 5.43836C3.80159 5.57761 3.69077 5.74298 3.61507 5.92505C3.53937 6.10712 3.50027 6.30232 3.50001 6.4995V10C3.49974 10.1974 3.53848 10.3928 3.61398 10.5751C3.68949 10.7575 3.80028 10.9231 3.93999 11.0625C4.07971 11.2019 4.24558 11.3123 4.42809 11.3874C4.61061 11.4624 4.80616 11.5007 5.00351 11.5H9.50001ZM6.50001 0V2.9985C6.50001 3.2755 6.72551 3.5 6.99501 3.5H9.50001L6.50001 0ZM4.99751 5.5C4.44651 5.5 4.00001 5.95 4.00001 6.496V10.004C4.00106 10.2681 4.10654 10.521 4.29342 10.7076C4.48031 10.8942 4.73341 10.9993 4.99751 11H13.5025C14.0535 11 14.5 10.55 14.5 10.004V6.496C14.499 6.23191 14.3935 5.97896 14.2066 5.79236C14.0197 5.60576 13.7666 5.50066 13.5025 5.5H4.99751ZM6.00001 8.25L5.00001 6.5H5.50001L6.25001 7.8125L7.00001 6.5H7.50001L6.50001 8.25L7.50001 10H7.00001L6.25001 8.6875L5.50001 10H5.00001L6.00001 8.25ZM10.5 9.5V10H8.00001V6.5H8.50001V9.5H10.5ZM12.0025 6.5C11.8709 6.49954 11.7406 6.52507 11.6189 6.57513C11.4972 6.62519 11.3866 6.6988 11.2935 6.79171C11.2003 6.88463 11.1265 6.99503 11.0761 7.11658C11.0257 7.23813 10.9999 7.36843 11 7.5C11 8.0525 11.444 8.5 12 8.5H12.495C12.774 8.5 13 8.722 13 9C13 9.276 12.7785 9.5 12.5005 9.5H11.9995C11.7235 9.5 11.5 9.272 11.5 9.002V8.997H11V8.9995C10.9999 9.13107 11.0258 9.26137 11.0762 9.38292C11.1266 9.50446 11.2005 9.61487 11.2936 9.70782C11.3867 9.80076 11.4973 9.87441 11.6189 9.92455C11.7406 9.97469 11.8709 10.0003 12.0025 10H12.4975C12.6291 10.0005 12.7594 9.97493 12.8811 9.92487C13.0028 9.87481 13.1134 9.8012 13.2065 9.70829C13.2997 9.61537 13.3736 9.50497 13.4239 9.38342C13.4743 9.26187 13.5001 9.13157 13.5 9C13.5 8.4475 13.056 8 12.5 8H12.005C11.726 8 11.5 7.778 11.5 7.5C11.5 7.224 11.7215 7 11.9995 7H12.5005C12.7765 7 13 7.2265 13 7.5H13.5C13.5 7.36847 13.4741 7.23823 13.4236 7.11674C13.3732 6.99525 13.2994 6.8849 13.2062 6.79201C13.1131 6.69912 13.0026 6.62551 12.881 6.5754C12.7593 6.52529 12.629 6.49967 12.4975 6.5H12.0025Z" fill="#14B8A6"/>
+                </svg>
+                <p class="account__form-select-text">Перетащите файл сюда или <span class="account__form-select-file">Выберите файл</span></p>
+                <span>Поддерживаемые форматы: .xls / .xlsx</span>
+              </label>
+
+              <div class="account__form-modal-bottom">
+                <button class="account__form-modal-cancel" type="button">Отмена</button>
+                <button type="submit">Загрузить</button>
+              </div>
+            </form>
+          </div>
+
+          
+
+        </div>
+      </main>
+
+      <div class="account-add-category__modal">
+        <form class="account-add-category__form">
+            <h3>Новый бренд</h3>
+
+            <div class="account-add-category__list brand">
+                <div class="account-add-category__item">
+                    <label>Название бренда <span>*</span></label>
+                    <input class="admin-input" type="text" placeholder="Введите название"/>
+                </div>
+                
+            </div>
+
+            <label>Логотип бренда <span>*</span></label>
+            <div class="account-add-brand__image-nav">
+                <div class="account-add-brand__image">
+                    <input class="account-add-brand__image-file" type="file"/>
+
+                    <div class="account-add-brand__image-icon">
+                        <img src="./images/upload-icon.svg" alt="upload-icon"/>
+                        <span>Добавить новый</span>
+                    </div>
+                </div>
+
+                <div class="account-add-brand__image-btn">
+                    <a class="account-add-brand__change-logo" href="#">Изменить лого</a>
+                    <a class="account-add-brand__delete-logo" href="#">Удалить лого</a>
+                </div>
+            </div>
+
+            
+
+            <div class="flex-end-buttons mt-32">
+                <button class="admin-btn-cancel admin-add-category-modal-cancel" type="button">Отмена</button>
+                <button class="admin-btn-success" type="submit">Сохранить</button>
+            </div>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <img
+                  class="footer__info-logo"
+                  src="./images/white-logo.svg"
+                  alt="logo"
+                />
+                <a class="footer__info-phone" href="tel:+998711000001"
+                  >+998 71 100 00 01</a
+                >
+                <a class="footer__info-mail" href="mailto:support@toptez.uz"
+                  >support@toptez.uz</a
+                >
+              </div>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">Стать партнером</li>
+                  <li class="footer__menu-item">Часто задаваемые вопросы</li>
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Наши услуги</li>
+                  <li class="footer__menu-item">Список брендов</li>
+                </ul>
+              </nav>
+              <div class="footer__mail">
+                <h5 class="footer__mail-title">Подписаться на новости</h5>
+                <form class="footer__mail-form" action="" method="">
+                  <div class="footer__mail-icon">
+                    <img src="./images/input-email-icon.svg" alt="" />
+                  </div>
+                  <input
+                    name="email"
+                    class="footer__mail-input"
+                    type="email"
+                    placeholder="Введите эл. почту"
+                  />
+                  <button type="submit" class="footer__mail-button">
+                    <img
+                      src="./images/arrow-right-icon.svg"
+                      alt="right arrow"
+                    />
+                  </button>
+                </form>
+              </div>
+              <div class="footer__social">
+                <h5 class="footer__social-title">Наши соц. сети</h5>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <img src="./images/instagram-icon.svg" alt="instagram" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/facebook-icon.svg" alt="facebook" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/pinterest-icon.svg" alt="pinterest" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/twitter-icon.svg" alt="twitter" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="copyright-text">
+              2023 © Узбекистан. Все права защищены
+            </div>
+            <div class="copyright-link">
+              <a class="link-item" href="#">Политика конфиденциальности</a>
+              <a class="link-item" href="#">Пользовательское соглашение</a>
+              <a class="link-item" href="#">Управление файлами cookie</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="subscribe-modal">
+          <form class="subscribe-modal__form">
+            <h3 class="subscribe-modal__header">Подписаться на новости</h3>
+
+            <p class="subscribe-modal__text">
+              На вашу почту (<span class="subscribe-modal__email">(robert.fox@toptez.uz)</span>) будете получать новости о товарах в выбранных категориях:
+            </p>
+
+            <input class="subscribe-modal__email-form" type="hidden" name="email" />
+
+            <div class="subscribe-modal__all-categories">
+              <input type="checkbox" id="all_categories" name="all_categories" />
+              <label for="all_categories">Все категории</label>
+            </div>
+
+            <nav class="subscribe-modal__checkbox-nav">
+
+              <ul class="subscribe-modal__checkbox-list">
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="health_services" name="health_services" />
+                  <label for="health_services">МЕДИКО-САНИТАРНЫЕ УСЛУГИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="secondary_health_care" name="secondary_health_care" />
+                  <label for="secondary_health_care">ВТОРИЧНАЯ МЕДИЦИНСКАЯ ПОМОЩЬ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="operating_units" name="operating_units" />
+                  <label for="operating_units">ОПЕРАЦИОННЫЕ БЛОКИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="dentistry" name="dentistry" />
+                  <label for="dentistry">СТОМАТОЛОГИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="medical_imaging" name="medical_imaging" />
+                  <label for="medical_imaging">МЕДИЦИНСКАЯ ВИЗУАЛИЗАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="rehabilitation" name="rehabilitation" />
+                  <label for="rehabilitation">РЕАБИЛИТАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="comfort_well_being" name="comfort_well_being" />
+                  <label for="comfort_well_being">КОМФОРТ, ХОРОШЕЕ САМОЧУВСТВИЕ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="veterinary" name="veterinary" />
+                  <label for="veterinary">ВЕТЕРИНАРИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="technical_platform" name="technical_platform" />
+                  <label for="technical_platform">ТЕХНИЧЕСКАЯ ПЛАТФОРМА</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="laboratory" name="laboratory" />
+                  <label for="laboratory">ЛАБОРАТОРНОЕ ДЕЛО</label>
+                </li>
+
+              </ul>
+
+            </nav>
+
+            <div class="subscribe-modal__checkbox-button">
+              <button class="subscribe-modal__checkbox-close" type="button">Отмена</button>
+              <button class="subscribe-modal__checkbox-send" type="submit">Подтвердить</button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="./js/catalog.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth">
+            <div class="auth__container">
+                <div class="auth__header">
+                    <div class="auth__header-icon">
+                        <img src="./images/logo.svg" alt="logo"/>
+                    </div>
+                    <!-- <div class="auth__header-translate">Русский</div> -->
+                    <div class="auth__header-translate">
+                        <form action="auth__header-form" method="">
+                            <select class="auth__header-form-translate" name="">
+                                <option value="ru" selected>Русский</option>
+                                <option value="uz">Узбекский</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="auth__form">
+                    <h2><a class="auth__arrow-left" href="#"><img src="./images/arrow-left-icon.svg" alt="arrow-left"/></a>Верификация эл. почты</h2>
+                    <p class="auth__verification-text">
+                        Мы отправили на вашу почту <span class="">(mahkamov4th@gmail.com)</span> код подтверждения. Введите 4-значный код ниже
+                    </p>
+                    <form action="" method="">
+                        <input class="form-control" type="number" id="code" name="code_opt" placeholder="Введите код подтверждения"/>
+                        <div class="auth__bottom">
+                            <a class="auth__bottom-link text-grey" href="#">Изменить эл. почту</a>
+                            <button class="auth__bottom-btn" type="submit">Подтвердить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="auth-background">
+            <img src="./images/auth-background.png" alt=""/>
+        </div>
+    </div>
+</body>
+</html>

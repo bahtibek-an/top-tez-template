@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <!-- main header  -->
+
+    <header class="admin-header">
+        <div class="admin-auth__container">
+            <div class="admin-header__inner">
+                <div class="admin-header_logo">
+                    <img src="./images/logo.svg" alt="brand-img"/>
+                </div>
+                <div class="auth__header-translate">
+                    <form action="auth__header-form" method="">
+                        <select class="auth__header-form-translate" name="">
+                            <option value="ru" selected>Русский</option>
+                            <option value="uz">Узбекский</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main header end  -->
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="admin-auth__container">
+            <div class="admin-auth__inner">
+                <div class="admin-auth__content">
+                    <h2 class="admin-auth__header">Войти в систему</h2>
+                    <form class="admin-auth__form">
+                        <label for="email">Эл. почта</label>
+                        <input class="admin-input" id="email" type="email" placeholder="Введите эл. почту"/>
+                        <label class="mt-24" for="password">Пароль</label>
+                        <div class="admin-password-input">
+                            <input class="admin-input" id="password" type="password" placeholder="Введите пароль"/>
+                            <img class="admin-show-password" src="./images/password-icon-open.svg" alt="password-open-icon"/>
+                        </div>
+                        <div class="admin-auth__form-btn">
+                            <a href="#">Забыли пароль?</a>
+                            <button class="admin-btn-success" type="submit">Войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="./js/catalog.js"></script>
+  </body>
+</html>
+

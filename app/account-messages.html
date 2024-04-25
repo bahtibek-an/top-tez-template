@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+     <!-- header top  -->
+     <header class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item">
+                <span>Выбранный город: </span>
+                <form class="select-form" action="form" method="">
+                  <select>
+                    <option value="tashkent" selected>Ташкент</option>
+                    <option value="samarkand">Самарканд</option>
+                    <option value="nukus">Нукус</option>
+                  </select>
+                </form>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="tel:+998711000001">
+                  <img src="./images/contact-icon.svg" alt="" />
+                  <span>Горячая линия: +998 71 100 00 01</span>
+                </a>
+              </li>
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="mailto:support@toptez.uz">
+                  <img src="./images/email-icon.svg" alt="" />
+                  <span>Эл. почта: support@toptez.uz</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="header-top__list-item header-top__list-item-contact">
+                <a class="header-top__link" href="#">
+                  <img src="./images/help-icon.svg" alt="" />
+                  <span>Помощь</span>
+                </a>
+              </li>
+              <li class="header-top__list-item">
+                <span>Изменить язык: </span>
+                <form class="select-form" action="" method="">
+                  <select onchange="this.form.submit()">
+                    <option value="ru" selected>Русский</option>
+                    <option value="uz">Узбекский</option>
+                  </select>
+                </form>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header top end  -->
+
+    <!-- header mobile begin  -->
+
+    <header class="mobile-header">
+      <div class="container">
+        <div class="mobile-header__content">
+          <div class="mobile-header__inner">
+            <div class="mobile-header__hamburger">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <a class="mobile-header__logo" href="#"><img src="./images/logo.svg" alt="logo" /></a>
+            <ul class="mobile-header__list">
+              <li class="mobile-header__item">
+                <a class="mobile-header__item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="mobile-header__form" action="" method="">
+            <input
+              class="mobile-header__form-input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="mobile-header__form-btn">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="mobile__right-menu">
+        <div class="mobile__right-menu__inner">
+
+          <div class="mobile__right-menu-close-btn"></div>
+
+          <a class="mobile__right-menu-contact" href="tel:+998711000001">
+            <img src="./images/contact-icon.svg" alt="" />
+            <span>Горячая линия: +998 71 100 00 01</span>
+          </a>
+
+          <a class="mobile__right-menu-contact" href="mailto:support@toptez.uz">
+            <img src="./images/email-icon.svg" alt="" />
+            <span>Эл. почта: support@toptez.uz</span>
+          </a>
+
+          <div class="mobile__right-menu-selected"> 
+            <span>Выбранный город: </span>
+            <form class="select-form" action="form" method="">
+              <select>
+                <option value="tashkent" selected>Ташкент</option>
+                <option value="samarkand">Самарканд</option>
+                <option value="nukus">Нукус</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="mobile__right-menu-selected">
+            <span>Изменить язык: </span>
+              <form class="select-form" action="" method="">
+                <select>
+                  <option value="ru" selected>Русский</option>
+                  <option value="uz">Узбекский</option>
+                </select>
+              </form>
+          </div>
+
+          
+          <ul class="mobile__right-menu-list">
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Сравнение
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="#">
+                Избранные
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+            <li class="mobile__right-menu-item">
+              <a href="">
+                Помощь
+                <img src="./images/arrow-right-icon-link.svg" alt="arrow-right"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- header mobile end  -->
+
+    
+
+    <!-- main header  -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <form class="form" action="" method="">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Поиск оборудования, бренд, продавца..."
+            />
+            <button class="form__button">
+              <img src="./images/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+          <nav class="menu menu__header">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="compared" />
+                  <span>Сравнение<i class="link-badge">4</i></span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/compared.svg" alt="favorites" />
+                  <span>Избранные</span>
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-item-link" href="#">
+                  <img src="./images/account.svg" alt="account" />
+                  <span>Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main header end  -->
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="container">
+
+            <div class="account-header">
+              <h2>Персональный кабинет</h2>
+              <a href="#">Добавить товар</a>
+            </div>
+
+            <div class="account__container">
+              <div class="account__sidebar">
+                <ul class="account__sidebar-list">
+
+                  <li class="account__sidebar-item">
+                    <a href="#">Мой профиль</a>
+                  </li>
+
+                  <li class="account__sidebar-item">
+                    <a href="#">Безопасность</a>
+                  </li>
+                  
+                  <li class="account__sidebar-item is_active">
+                    <a href="#">Мои товары</a>
+                  </li>
+
+                  <li class="account__sidebar-item">
+                    <a href="#">Уведомления</a>
+                  </li>
+
+                  <li class="account__sidebar-item exit">
+                    <a href="#">Выйти из аккаунта</a>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="account__messages">
+                <table class="account__messages-table">
+                    <tr>
+                        <th>Название категории</th>
+                        <th>Пользователь</th>
+                        <th>Номер телефона</th>
+                    </tr>
+                    <tr>
+                        <td>Товар-1</td>
+                        <td>Тамара Елисеева</td>
+                        <td>(270) 426-1680</td>
+                    </tr>
+                    <tr>
+                        <td>Товар-2</td>
+                        <td>Тамара Елисеева</td>
+                        <td>(270) 426-1680</td>
+                    </tr>
+                    <tr>
+                        <td>Товар-3</td>
+                        <td>Тамара Елисеева</td>
+                        <td>(270) 426-1680</td>
+                    </tr>
+                    <tr>
+                        <td>Товар-4</td>
+                        <td>Тамара Елисеева</td>
+                        <td>(270) 426-1680</td>
+                    </tr>
+                </table>
+              </div>
+
+            </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <img
+                  class="footer__info-logo"
+                  src="./images/white-logo.svg"
+                  alt="logo"
+                />
+                <a class="footer__info-phone" href="tel:+998711000001"
+                  >+998 71 100 00 01</a
+                >
+                <a class="footer__info-mail" href="mailto:support@toptez.uz"
+                  >support@toptez.uz</a
+                >
+              </div>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">Стать партнером</li>
+                  <li class="footer__menu-item">Часто задаваемые вопросы</li>
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Наши услуги</li>
+                  <li class="footer__menu-item">Список брендов</li>
+                </ul>
+              </nav>
+              <div class="footer__mail">
+                <h5 class="footer__mail-title">Подписаться на новости</h5>
+                <form class="footer__mail-form" action="" method="">
+                  <div class="footer__mail-icon">
+                    <img src="./images/input-email-icon.svg" alt="" />
+                  </div>
+                  <input
+                    name="email"
+                    class="footer__mail-input"
+                    type="email"
+                    placeholder="Введите эл. почту"
+                  />
+                  <button type="submit" class="footer__mail-button">
+                    <img
+                      src="./images/arrow-right-icon.svg"
+                      alt="right arrow"
+                    />
+                  </button>
+                </form>
+              </div>
+              <div class="footer__social">
+                <h5 class="footer__social-title">Наши соц. сети</h5>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <img src="./images/instagram-icon.svg" alt="instagram" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/facebook-icon.svg" alt="facebook" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/pinterest-icon.svg" alt="pinterest" />
+                  </li>
+                  <li class="footer__social-item">
+                    <img src="./images/twitter-icon.svg" alt="twitter" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="copyright-text">
+              2023 © Узбекистан. Все права защищены
+            </div>
+            <div class="copyright-link">
+              <a class="link-item" href="#">Политика конфиденциальности</a>
+              <a class="link-item" href="#">Пользовательское соглашение</a>
+              <a class="link-item" href="#">Управление файлами cookie</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="subscribe-modal">
+          <form class="subscribe-modal__form">
+            <h3 class="subscribe-modal__header">Подписаться на новости</h3>
+
+            <p class="subscribe-modal__text">
+              На вашу почту (<span class="subscribe-modal__email">(robert.fox@toptez.uz)</span>) будете получать новости о товарах в выбранных категориях:
+            </p>
+
+            <input class="subscribe-modal__email-form" type="hidden" name="email" />
+
+            <div class="subscribe-modal__all-categories">
+              <input type="checkbox" id="all_categories" name="all_categories" />
+              <label for="all_categories">Все категории</label>
+            </div>
+
+            <nav class="subscribe-modal__checkbox-nav">
+
+              <ul class="subscribe-modal__checkbox-list">
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="health_services" name="health_services" />
+                  <label for="health_services">МЕДИКО-САНИТАРНЫЕ УСЛУГИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="secondary_health_care" name="secondary_health_care" />
+                  <label for="secondary_health_care">ВТОРИЧНАЯ МЕДИЦИНСКАЯ ПОМОЩЬ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="operating_units" name="operating_units" />
+                  <label for="operating_units">ОПЕРАЦИОННЫЕ БЛОКИ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="dentistry" name="dentistry" />
+                  <label for="dentistry">СТОМАТОЛОГИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="medical_imaging" name="medical_imaging" />
+                  <label for="medical_imaging">МЕДИЦИНСКАЯ ВИЗУАЛИЗАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="rehabilitation" name="rehabilitation" />
+                  <label for="rehabilitation">РЕАБИЛИТАЦИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="comfort_well_being" name="comfort_well_being" />
+                  <label for="comfort_well_being">КОМФОРТ, ХОРОШЕЕ САМОЧУВСТВИЕ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="veterinary" name="veterinary" />
+                  <label for="veterinary">ВЕТЕРИНАРИЯ</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="technical_platform" name="technical_platform" />
+                  <label for="technical_platform">ТЕХНИЧЕСКАЯ ПЛАТФОРМА</label>
+                </li>
+
+                <li class="subscribe-modal__checkbox-item">
+                  <input type="checkbox" id="laboratory" name="laboratory" />
+                  <label for="laboratory">ЛАБОРАТОРНОЕ ДЕЛО</label>
+                </li>
+
+              </ul>
+
+            </nav>
+
+            <div class="subscribe-modal__checkbox-button">
+              <button class="subscribe-modal__checkbox-close" type="button">Отмена</button>
+              <button class="subscribe-modal__checkbox-send" type="submit">Подтвердить</button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="./js/catalog.js"></script>
+  </body>
+</html>
+
